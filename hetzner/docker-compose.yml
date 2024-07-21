@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  reposilite:
+    image: dzikoysk/reposilite:3.5.14
+    ports:
+      - 8080:8080
+    environment:
+      - JAVA_OPTS=-Xmx128M ${JAVA_COMPOSE_OPTS}
+      - REPOSILITE_OPTS=--token admin:secret ${REPOSILITE_COMPOSE_OPTS}
+    volumes:
+      - reposilite-data:/app/data
+    restart: unless-stopped
+    stdin_open: true
+    tty: true
+volumes:
+  reposilite-data: {}

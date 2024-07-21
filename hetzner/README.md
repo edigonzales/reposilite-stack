@@ -1,0 +1,5 @@
+# Hetzner
+
+```
+docker compose up
+```
