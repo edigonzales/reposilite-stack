@@ -12,5 +12,11 @@ services:
     restart: unless-stopped
     stdin_open: true
     tty: true
+  caddy:
+    image: caddy:2.8.4-alpine
+    ports:
+      - 80:80
+    volumes:
+      - ./caddy/Caddyfile:/etc/caddy/Caddyfile
 volumes:
   reposilite-data: {}

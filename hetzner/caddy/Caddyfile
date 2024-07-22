@@ -1,0 +1,6 @@
+localhost:80 {    
+
+    reverse_proxy reposilite:8080
+
+    log stdout
+}
