@@ -44,3 +44,18 @@ cd && git clone https://github.com/edigonzales/reposilite-stack.git
 ```
 docker compose -f reposilite-stack/hetzner/docker-compose.yml -p reposilite up
 ```
+
+
+## Tokens
+
+Admin Token in der GUI-Konsole erstellen und anschliessend Anwendung ohne `--token admin:secret` neu starten (siehe docker-compose.yml).
+
+```
+token-generate admin m
+```
+
+Weitere Benutzer und Token erstellen:
+
+```
+
+```
