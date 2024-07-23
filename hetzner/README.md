@@ -26,6 +26,8 @@ runcmd:
   #- chown -R reposilite:reposilite /home/reposilite/reposilite-data
 ```
 
+- Floating IP: https://docs.hetzner.com/de/cloud/floating-ips/persistent-configuration/ -> todo: in cloud-config (chmod 700 /etc/netplan/60-floating-ip.yaml)
+
 ## Anwendung deployen
 
 ```
@@ -37,9 +39,9 @@ sudo su reposilite
 ```
 
 ```
-cd && git clone https://github.com/edigonzales/reposilite-stack.git && cd hetzner
+cd && git clone https://github.com/edigonzales/reposilite-stack.git 
 ```
 
 ```
-docker compose up
+docker compose -f reposilite-stack/hetzner/docker-compose.yml -p reposilite up
 ```
