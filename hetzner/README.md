@@ -57,5 +57,16 @@ token-generate admin m
 Weitere Benutzer und Token erstellen:
 
 ```
+token-generate sogis-user
+```
 
+Repository für sogis-user freischalten (ro):
+
+```
+route-add sogis-user /interlis r
+```
+
+
+```
+route-add sogis-user /osgeo r
 ```
