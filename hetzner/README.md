@@ -22,10 +22,9 @@ package_upgrade: false
 
 runcmd:
   - [su, reposilite, -c, "git clone https://github.com/edigonzales/reposilite-stack.git /home/reposilite/reposilite-stack"]
-  #- mkdir /home/reposilite/reposilite-data
-  #- chown -R reposilite:reposilite /home/reposilite/reposilite-data
 ```
 
+- Anwendung starten: todo (siehe unten)
 - Floating IP: https://docs.hetzner.com/de/cloud/floating-ips/persistent-configuration/ -> todo: in cloud-config (chmod 700 /etc/netplan/60-floating-ip.yaml)
 
 ## Anwendung deployen
