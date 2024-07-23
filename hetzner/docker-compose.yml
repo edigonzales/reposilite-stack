@@ -18,6 +18,7 @@ services:
     image: caddy:2.8.4-alpine
     ports:
       - 80:80
+      - 443:443
     volumes:
       - ./caddy/Caddyfile:/etc/caddy/Caddyfile
       - caddy-config:/config
